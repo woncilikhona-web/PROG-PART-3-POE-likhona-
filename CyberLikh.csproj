@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ChatGPT Image Apr 28, 2026, 02_03_22 PM.png" />
+    <None Remove="ChatGPT Image May 30, 2026, 03_00_52 PM.png" />
+    <None Remove="ChatGPT Image May 30, 2026, 03_26_07 PM.png" />
+    <None Remove="Copilot_20260429_111327.png" />
+    <None Remove="Copilot_20260429_111533.png" />
+    <None Remove="Empty-Circle-Fundamental-Shape-PNG-thumb.png" />
+    <None Remove="pngtree-artistic-hand-drawn-arrows-pack-png-image_15925603.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ChatGPT Image Apr 28, 2026, 02_03_22 PM.png" />
+    <Resource Include="ChatGPT Image May 30, 2026, 03_00_52 PM.png" />
+    <Resource Include="ChatGPT Image May 30, 2026, 03_26_07 PM.png" />
+    <Resource Include="Copilot_20260429_111327.png" />
+    <Resource Include="Copilot_20260429_111533.png" />
+    <Resource Include="Empty-Circle-Fundamental-Shape-PNG-thumb.png" />
+    <Resource Include="pngtree-artistic-hand-drawn-arrows-pack-png-image_15925603.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="CyberLikh.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CyberLikh"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFF30101" Offset="0.833"/>
+                <GradientStop Color="#FFFFF7F7" Offset="0.01"/>
+                <GradientStop Color="#FFF64848" Offset="0.17"/>
+                <GradientStop Color="#FFEC7373" Offset="0"/>
+                <GradientStop Color="#FFF53D3D" Offset="0.037"/>
+                <GradientStop Color="#FFF64848" Offset="0.51"/>
+                <GradientStop Color="#FFFB1717" Offset="0.053"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Center" Height="176" VerticalAlignment="Center" Width="144" RenderTransformOrigin="-0.379,0.736" Source="/ChatGPT Image May 30, 2026, 03_00_52 PM.png"/>
+        <Button Content="Continue"
+        HorizontalAlignment="Center"
+        Margin="0,345,0,0"
+        VerticalAlignment="Top"
+        Click="Button_Click"
+        Cursor="Hand"
+        Foreground="White"
+        FontSize="16"
+        Padding="20,8"
+        BorderThickness="0,0,0,4"
+        BorderBrush="#7f1d1d"
+        Width="120"
+        Height="40">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#dc2626"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="#ef4444"/>
+                                        <Setter TargetName="border" Property="BorderThickness" Value="0,0,0,6"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="#b91c1c"/>
+                                        <Setter TargetName="border" Property="BorderThickness" Value="0,0,0,2"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Label Content="CyberLikh" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="36" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="-23,274,0,0" VerticalAlignment="Top" Width="273" Source="/Copilot_20260429_111533.png"/>
+        <Image HorizontalAlignment="Left" Height="120" Margin="620,0,0,0" VerticalAlignment="Top" Width="185" Source="/ChatGPT Image Apr 28, 2026, 02_03_22 PM.png" RenderTransformOrigin="0.584,0.284"/>
+        <Image HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="185" Source="/ChatGPT Image Apr 28, 2026, 02_03_22 PM.png" RenderTransformOrigin="0.584,0.284" Margin="-36,60,0,0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="89.376"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="174" Margin="587,231,0,0" VerticalAlignment="Top" Width="273" Source="/Copilot_20260429_111533.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.735"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>
